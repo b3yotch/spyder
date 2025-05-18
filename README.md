@@ -5,7 +5,7 @@ A User-Facing Chat-Style Retrieval Augmented Generation (RAG) Agentic System. Us
 ## Core Functionality
 
 *   **Chat Interface**: Users interact with an LLM agent through a basic web UI.
-*   **Agentic LLM**: The LLM (e.g., Qwen2.5 0.5b/1b via Ollama) uses predefined tools (functions) to answer queries.
+*   **Agentic LLM**: The LLM (e.g., Qwen3 0.6b via Ollama) uses predefined tools (functions) to answer queries.
 *   **Data Pipeline**: An automated pipeline downloads data daily (or on demand) from the Federal Register API, processes it, and stores it in a local SQLite database.
 *   **SQLite Database**: Stores Federal Register documents, queried using raw SQL.
 *   **API/WebSockets**: A FastAPI backend provides the interface between the UI and the LLM agent, primarily using WebSockets for chat.
@@ -154,4 +154,6 @@ MIT
 - [Federal Register API](https://www.federalregister.gov/developers/documentation/api/v1)
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Ollama](https://ollama.ai/)
-- [OpenAI](https://openai.com/) 
+![2025-05-18_12-08-41-072](https://github.com/user-attachments/assets/264a1663-51c5-46bb-ab6c-e2c483b345fa)
+
+

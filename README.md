@@ -128,7 +128,7 @@ A User-Facing Chat-Style Retrieval Augmented Generation (RAG) Agentic System. Us
 ## Key Conditions Met
 
 *   **No Visible Tool Calls**: Tool execution details are handled server-side and are not directly exposed to the end-user in the chat.
-*   **Daily Updating Data**: The pipeline is designed for daily updates (though not scheduled by cronjob for this demo). Incremental updates ensure only new data is fetched.
+*   **Daily Updating Data**: The pipeline is designed for daily updates . Incremental updates ensure only new data is fetched.
 *   **No LLM Code Execution**: The LLM only suggests tool calls; it does not execute arbitrary code.
 *   **Agent Uses Local DB**: The agent queries the local SQLite database, not the live Federal Register API directly for user queries.
 *   **Async/Non-Blocking**: The FastAPI interface and underlying database/API calls in the agent and pipeline are asynchronous.
@@ -140,10 +140,9 @@ A User-Facing Chat-Style Retrieval Augmented Generation (RAG) Agentic System. Us
 
 ## Important Notes
 
-*   **Demo Scope**: This is a demonstration prototype. Features like robust error handling across all edge cases, extensive logging, user authentication, and chat history management are simplified or out of scope.
-*   **Data Volume**: Fetching very large date ranges from the Federal Register API can be slow and may hit API rate limits. The downloader includes basic retry and batching logic, but for production-scale historical data ingestion, their bulk data options would be more suitable.
-*   **LLM Performance**: The quality and speed of responses depend on the local LLM used with Ollama and your system's hardware.
-*   **SQLite File**: The `federal_register.db` file will be created in the project root. It's recommended to add this to your `.gitignore` file if you're using version control.
+*   **Demo Scope**: This is a demonstration prototype. Features like robust error handling across all edge cases, extensive logging, user authentication, and chat history management are simplified .
+*   **LLM Performance**: The quality and speed of responses depend on the local LLM used with Ollama .
+*   **SQLite File**: The `federal_register.db` file will be created in the project root.
 
 ## License
 
